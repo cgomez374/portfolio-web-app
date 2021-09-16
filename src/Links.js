@@ -1,7 +1,7 @@
 export const links = [
     {
         type : 'personal projects',
-        name: 'countries api',
+        name: 'countries API',
         link : 'https://countries-api-app.netlify.app/',
         img: 'countries-api.png'
     },
@@ -40,5 +40,11 @@ export const links = [
         name: 'Hannesy Fitness',
         link : 'https://cgomez374.github.io/Personal-Trainer/',
         img: 'hannessy-fitness.png'
+    },
+    {
+        type : 'personal projects',
+        name: 'Movie API Search',
+        link : 'https://movie-api-search-app.netlify.app/',
+        img: 'movie-app.png'
     }
 ]
