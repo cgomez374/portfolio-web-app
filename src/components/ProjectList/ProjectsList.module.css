@@ -62,7 +62,11 @@
         flex-wrap: nowrap;
     }
     .projectCard {
-        width: 50%;
+        width: 60%;
+    }
+
+    .projectCard img {
+        height: auto;
     }
 }
 
