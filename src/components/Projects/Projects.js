@@ -4,9 +4,8 @@ import Styles from './Projects.module.css';
 import ProjectList from '../ProjectList/ProjectList';
 
 const Projects = () => {
-    const [reactProjects, setReactProjects] = useState([]);
+    const [personalProjects, setPersonalProjects] = useState([]);
     const [mpProjects, setMpProjects] = useState([]);
-    const [basicsProjects, setBasicsProjects] = useState([]);
 
     const getProjects = (type) => {
         let projects = [];
@@ -16,27 +15,23 @@ const Projects = () => {
             }
         })
 
-        if(type === 'react')
-            setReactProjects(projects);
+        if(type === 'personal projects')
+            setPersonalProjects(projects);
         else if(type === 'minority programmers association')
             setMpProjects(projects)
-        else if(type === 'html + css + javascript')
-            setBasicsProjects(projects)
 
     }
 
     useEffect(() => {
-        getProjects('react');
+        getProjects('personal projects');
         getProjects('minority programmers association');
-        getProjects('html + css + javascript')
     }, [])
     return (
         <div className={Styles.projects} id={'projects'}>
             <h2>what i have accomplished</h2>
             <div className={Styles.listContainer} >
-                <ProjectList projects={reactProjects} />
+                <ProjectList projects={personalProjects} />
                 <ProjectList projects={mpProjects} />
-                <ProjectList projects={basicsProjects} />
             </div>
         </div>
     )

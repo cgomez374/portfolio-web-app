@@ -1,6 +1,6 @@
 export const links = [
     {
-        type : 'react',
+        type : 'personal projects',
         name: 'countries api',
         link : 'https://countries-api-app.netlify.app/',
         img: 'countries-api.png'
@@ -36,7 +36,7 @@ export const links = [
         img: 'mpa.png'
     },
     {
-        type : 'html + css + javascript',
+        type : 'personal projects',
         name: 'Hannesy Fitness',
         link : 'https://cgomez374.github.io/Personal-Trainer/',
         img: 'hannessy-fitness.png'
