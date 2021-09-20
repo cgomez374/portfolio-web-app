@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap');
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,9 +7,11 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fff;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Saira Condensed', sans-serif;
+  background-color: #F9F9F6;
   color: #DDCC70;
+  /* color: #DDCC70; */
 }
 
 ul li {

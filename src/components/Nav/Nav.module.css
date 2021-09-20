@@ -1,5 +1,6 @@
 .nav {
-    background-color: #651C29;
+    /* background-color: #651C29; */
+    background-color: #102F41;
     width: 100%;
     min-height: 3rem;
     display: flex;
@@ -27,7 +28,8 @@
 
 .list a {
     text-decoration: none;
-    color: #DDCC70;
+    color: #F9F9F6;
+    /* color: #DDCC70; */
     text-transform: capitalize;
     font-size: 1.5rem;
     outline: none;

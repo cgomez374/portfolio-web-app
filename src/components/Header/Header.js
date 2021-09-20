@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav'
 
 const Header = () => {
     return (
-        <header className={Styles.header} id={'home'}>
+        <header className={Styles.header} id={'home'} >
             {/* NAVIGATION */}
             <Nav />
             {/* SHOWCASE */}

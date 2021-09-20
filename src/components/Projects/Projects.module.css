@@ -1,10 +1,13 @@
 .projects {
-    background-color: #651C29;
+    background-color: #102F41;
+    /* background-color: #651C29; */
     width: 100%;
     height: auto;
     padding-top: 3vh;
     margin: 0;
     text-align: center;
+    /* color: #DDCC70; */
+    color: #F9F9F6;
 }
 
 .projects h2 {
