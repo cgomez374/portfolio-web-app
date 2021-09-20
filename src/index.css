@@ -22,3 +22,19 @@ a {
   text-decoration: none;
   color: #000;
 }
+
+.showcase {
+    background-image: url('./assets/showcase.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding-top: 9rem;
+    /* color: #fff; */
+    color: #000;
+    /* color: #DDCC70; */
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 2rem;
+}
