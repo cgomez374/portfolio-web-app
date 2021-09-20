@@ -59,16 +59,20 @@
 
 @media (max-width: 750px){
     .track {
+        /* background-color: red; */
         width: 80%;
         flex-direction: column;
         flex-wrap: nowrap;
     }
     .projectCard {
-        width: 60%;
+        width: 100%;
     }
 
     .projectCard img {
         height: auto;
+    }
+    .projectCard h4 {
+        font-size: 1.2rem;
     }
 }
 
