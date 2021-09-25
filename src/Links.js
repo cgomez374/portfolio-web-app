@@ -24,18 +24,6 @@ export const links = [
     img: "mpa.png",
   },
   {
-    type: "minority programmers association",
-    name: "Learn More Skills Test",
-    link: "https://skills-test-learn-page.vercel.app/",
-    img: "mpa.png",
-  },
-  {
-    type: "minority programmers association",
-    name: "Incubator Page Skills Test",
-    link: "https://incubator-page.vercel.app/",
-    img: "mpa.png",
-  },
-  {
     type: "personal projects",
     name: "Hannesy Fitness",
     link: "https://cgomez374.github.io/Personal-Trainer/",
@@ -46,11 +34,5 @@ export const links = [
     name: "manage landing page",
     link: "https://cgomez374.github.io/manage-landing-page/",
     img: "manage-landing-page.PNG",
-  },
-  {
-    type: "personal projects",
-    name: "Movie API Search",
-    link: "https://movie-api-search-app.netlify.app/",
-    img: "movie-app.png",
-  },
+  }
 ];
