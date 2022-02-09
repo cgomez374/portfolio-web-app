@@ -6,12 +6,12 @@ const Header = () => {
     return (
         <header className={Styles.header} id={'home'} >
             {/* NAVIGATION */}
-            <Nav />
+            {/* <Nav /> */}
             {/* SHOWCASE */}
-            <div className={Styles.showcase}>
+            {/* <div className={Styles.showcase}>
                 <h1>hey i'm carlos</h1>
-                <h3>a front end developer</h3>
-            </div>
+                <h3>software engineer</h3>
+            </div> */}
         </header>
     )
 }

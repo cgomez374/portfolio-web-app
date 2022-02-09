@@ -8,7 +8,7 @@ const Footer = () => {
     }
     return (
         <footer className={Styles.footer} id={'contact'}>
-            <h2>Let's work together...</h2>
+            <h2>Let's work together!</h2>
             <ul>
                 <li><a href="https://github.com/cgomez374" target='_blank' ><i class="fab fa-github fa-2x"></i></a></li>
                 <li onClick={sendEmail}><a href="#" ><i class="fas fa-envelope fa-2x"></i></a></li>
