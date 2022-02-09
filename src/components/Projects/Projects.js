@@ -28,7 +28,7 @@ const Projects = () => {
     }, [])
     return (
         <div className={Styles.projects} id={'projects'}>
-            <h2>what i have accomplished</h2>
+            <h2>what i've built</h2>
             <div className={Styles.listContainer} >
                 <ProjectList projects={personalProjects} />
                 <ProjectList projects={mpProjects} />
