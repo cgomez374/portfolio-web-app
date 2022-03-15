@@ -13,9 +13,9 @@ const ProjectList = ({ projects }) => {
         {projects !== null &&
           projects.map((project, index) => (
             <div className={Styles.projectCard} key={index}>
-              <img src={project.img} alt="project image" />
+              <img src={project.img} alt="project screenshot" />
               <h4>
-                <a href={project.link} target="_blank">
+                <a href={project.link} target="_blank" rel="noreferrer">
                   {project.name}
                 </a>
               </h4>

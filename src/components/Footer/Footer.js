@@ -19,19 +19,8 @@ const Footer = () => {
           </a>
         </li>
         <li onClick={sendEmail}>
-          <a href="#">
-            <i class="fas fa-envelope fa-2x"></i>
-          </a>
+          <i class="fas fa-envelope fa-2x"></i>
         </li>
-        {/* <li>
-          <a
-            href="https://www.linkedin.com/in/carlos-gomez-666662ab/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i class="fa-solid fa-circle-user fa-2x"></i>
-          </a>
-        </li> */}
       </ul>
     </footer>
   );
