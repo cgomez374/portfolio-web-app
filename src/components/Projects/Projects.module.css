@@ -45,8 +45,3 @@
     }
 }
 
-@media (max-width: 550px){
-    .projects h2, .listContainer h3 {
-        font-size: 1.5rem;
-    }
-}

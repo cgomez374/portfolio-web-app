@@ -13,8 +13,8 @@
 
 .projectCard {
   background-color: #000;
-  width: 40%;
-  height: 40vh;
+  width: 40vh;
+  height: 30vh;
   margin: 1.5vh;
   padding: 0vh;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -33,7 +33,7 @@
 .projectCard h4 {
   text-align: center;
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-decoration: none;
   margin: 1vh auto;
 }
@@ -42,30 +42,10 @@
   color: #f9f9f6;
 }
 
-@media (max-width: 1050px) {
-  .projectCard h4 {
-    /* font-size: 0.8rem; */
-  }
-}
-
-@media (max-width: 950px) {
-  .track {
-    flex-direction: column;
-    flex-wrap: nowrap;
-  }
+@media (max-width: 800px) {
   .projectCard {
-    width: 70%;
-    height: 45vh;
-  }
-  .projectCard h4 {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 700px) {
-  .projectCard {
-    width: 70%;
-    height: 40vh;
+    width: 50vh;
+    height: 35vh;
   }
 }
 
@@ -74,7 +54,9 @@
       width: 100%;
     }
   .projectCard {
-    width: 80%;
-    /* height: 35vh; */
+    width: 42vh;
   }
+    .projectCard h4 {
+      font-size: 1rem;
+    }
 }

@@ -13,7 +13,7 @@ export const links = [
   },
   {
     type: "personal projects",
-    name: "countries API",
+    name: "countries API with react",
     link: "https://countries-api-app.netlify.app/",
     img: "countries-api.png",
   },
@@ -37,13 +37,13 @@ export const links = [
   },
   {
     type: "personal projects",
-    name: "Hannesy Fitness",
+    name: "personal trainer landing page",
     link: "https://cgomez374.github.io/Personal-Trainer/",
     img: "hannessy-fitness.png",
   },
   {
     type: "personal projects",
-    name: "manage landing page",
+    name: "manage corp landing page",
     link: "https://cgomez374.github.io/manage-landing-page/",
     img: "manage-landing-page.PNG",
   },
