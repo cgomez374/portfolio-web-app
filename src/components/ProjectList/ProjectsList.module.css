@@ -44,7 +44,7 @@
 
 @media (max-width: 1050px) {
   .projectCard h4 {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
 }
 
@@ -54,8 +54,8 @@
     flex-wrap: nowrap;
   }
   .projectCard {
-    width: 65%;
-    height: 50vh;
+    width: 70%;
+    height: 45vh;
   }
   .projectCard h4 {
     font-size: 1.2rem;
@@ -64,15 +64,17 @@
 
 @media (max-width: 700px) {
   .projectCard {
-    width: 90%;
+    width: 70%;
+    height: 40vh;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .track {
       width: 100%;
     }
   .projectCard {
-    width: 95%;
+    width: 80%;
+    /* height: 35vh; */
   }
 }
