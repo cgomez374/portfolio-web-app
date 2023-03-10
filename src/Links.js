@@ -1,6 +1,18 @@
 export const links = [
   {
     type: "personal projects",
+    name: "turtle crossing game in python",
+    link: "https://drive.google.com/file/d/1qRK-eTJ8aN8dlszVomJdABNAnmx4uPWZ/view?usp=share_link",
+    img: "turtle_crossing_game.PNG",
+  },
+  {
+    type: "personal projects",
+    name: "snake game in python",
+    link: "https://drive.google.com/file/d/1Gj7EBr_xXO8VNNldSrOE3-nCq4xxGSfh/view?usp=share_link",
+    img: "snake_game.PNG",
+  },
+  {
+    type: "personal projects",
     name: "countries API",
     link: "https://countries-api-app.netlify.app/",
     img: "countries-api.png",
@@ -34,5 +46,5 @@ export const links = [
     name: "manage landing page",
     link: "https://cgomez374.github.io/manage-landing-page/",
     img: "manage-landing-page.PNG",
-  }
+  },
 ];
