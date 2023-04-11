@@ -1,6 +1,12 @@
 export const links = [
   {
     type: "personal projects",
+    name: "movie crud app in flask and SQLite3",
+    link: "https://drive.google.com/file/d/1M4w_Nz5cKUZVaN00-2wCrmLTSu-4E4Wk/view?usp=sharing",
+    img: "movie-crud-app.PNG",
+  },
+  {
+    type: "personal projects",
     name: "turtle crossing game in python",
     link: "https://drive.google.com/file/d/1qRK-eTJ8aN8dlszVomJdABNAnmx4uPWZ/view?usp=share_link",
     img: "turtle_crossing_game.PNG",
