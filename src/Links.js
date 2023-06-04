@@ -1,21 +1,15 @@
 export const links = [
   {
     type: "personal projects",
-    name: "movie app (flask, SQLite3, MovieDB API)",
+    name: "movie reviews backend app",
+    link: "https://drive.google.com/file/d/1zx2pIb7exHbeeWlnF9-Z0ik2Y-hL80gU/view?usp=sharing",
+    img: "movie_reviews.PNG",
+  },
+  {
+    type: "personal projects",
+    name: "movie library CRUD app",
     link: "https://drive.google.com/file/d/1M4w_Nz5cKUZVaN00-2wCrmLTSu-4E4Wk/view?usp=sharing",
     img: "movie-crud-app.PNG",
-  },
-  {
-    type: "personal projects",
-    name: "turtle crossing game in python",
-    link: "https://drive.google.com/file/d/1qRK-eTJ8aN8dlszVomJdABNAnmx4uPWZ/view?usp=share_link",
-    img: "turtle_crossing_game.PNG",
-  },
-  {
-    type: "personal projects",
-    name: "snake game in python",
-    link: "https://drive.google.com/file/d/1Gj7EBr_xXO8VNNldSrOE3-nCq4xxGSfh/view?usp=share_link",
-    img: "snake_game.PNG",
   },
   {
     type: "personal projects",

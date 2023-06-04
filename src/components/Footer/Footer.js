@@ -21,6 +21,15 @@ const Footer = () => {
         <li onClick={sendEmail}>
           <i class="fas fa-envelope fa-2x"></i>
         </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/cgomez374/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+        </li>
       </ul>
     </footer>
   );
