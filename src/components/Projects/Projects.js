@@ -16,13 +16,12 @@ const Projects = () => {
     });
 
     if (type === "personal projects") setPersonalProjects(projects);
-    else if (type === "minority programmers association")
-      setMpProjects(projects);
+    else if (type === "internship projects") setMpProjects(projects);
   };
 
   useEffect(() => {
     getProjects("personal projects");
-    getProjects("minority programmers association");
+    getProjects("internship projects");
   }, []);
   return (
     <div className={Styles.projects} id={"projects"}>
