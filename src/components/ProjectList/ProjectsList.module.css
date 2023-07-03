@@ -64,3 +64,31 @@
     font-size: 0.7rem;
   }
 }
+
+@media (max-width: 1600px) and (max-height: 600px) {
+  .track {
+    background-color: blue;
+    /* height: 80vh; */
+  }
+  .projectCard {
+    width: 65vh;
+    height: 45vh;
+  }
+}
+
+@media (max-width: 1600px) and (max-height: 400px) {
+  .projectCard {
+    width: 80vh;
+    height: 55vh;
+  }
+  /* .projectCard h4 {
+    font-size: 0.9rem;
+  } */
+}
+
+@media (max-width: 1600px) and (max-height: 300px) {
+  .projectCard h4 {
+    color: red;
+    font-size: 0.8rem;
+  }
+}
