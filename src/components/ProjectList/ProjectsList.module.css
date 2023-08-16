@@ -54,7 +54,7 @@
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 466px) {
   .projectCard h4 {
     font-size: 0.9rem;
   }
@@ -68,8 +68,8 @@
 
 @media (max-height: 700px) {
   .projectCard {
-    min-width: 60vh;
-    min-height: 40vh;
+    width: 50%;
+    height: 30%;
     margin: 1.5vh 5vh;
   }
 }
