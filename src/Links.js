@@ -1,15 +1,15 @@
 export const links = [
   {
     type: "personal projects",
-    name: "movie reviews backend app*",
-    link: "https://movie-reviews-app.onrender.com/",
-    img: "movie_reviews.PNG",
+    name: "Marketplace web application",
+    link: "https://drive.google.com/file/d/1Q2csrfGWO9mWO0SyzeyTJuip154e_8u1/view?usp=sharing",
+    img: "marketplace_app.PNG",
   },
   {
     type: "personal projects",
-    name: "movie library CRUD app",
-    link: "https://drive.google.com/file/d/1M4w_Nz5cKUZVaN00-2wCrmLTSu-4E4Wk/view?usp=sharing",
-    img: "movie-crud-app.PNG",
+    name: "movie reviews backend app*",
+    link: "https://movie-reviews-app.onrender.com/",
+    img: "movie_reviews.PNG",
   },
   {
     type: "personal projects",
