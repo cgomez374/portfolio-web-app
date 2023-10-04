@@ -35,6 +35,10 @@
     font-size: 1.1rem;
 }
 
+.aboutInfo a{
+    color: white;
+}
+
 .imgContainer {
     width: 30vh;
     height: 32vh;
