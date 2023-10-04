@@ -8,7 +8,7 @@ const About = () => {
       <h2>meet me</h2>
       <div className={Styles.aboutInfo}>
         <p>
-          I am a first-generation college graduate with a passion for software
+          I'm Carlos, a first-generation college graduate with a passion for software
           development and a background in customer-facing roles. Holding a
           Master's degree in Computer Science, I am equipped with both technical
           expertise and a deep appreciation for fostering meaningful
