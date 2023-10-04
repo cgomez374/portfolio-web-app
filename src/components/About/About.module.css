@@ -2,8 +2,8 @@
     width: 100%;
     height: auto;
     padding: 3vh;
-    background-color: #000000;
-    color: white;
+    background-color: #FFFAFA;
+    color: #000;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -33,10 +33,11 @@
     height: auto;
     margin: 1.5vh;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .aboutInfo a{
-    color: white;
+    color: #000;
 }
 
 .imgContainer {
@@ -58,7 +59,6 @@
 }
 
 .techListContainer {
-    /* background-color: red; */
     width: 72%;
     height: auto;
     padding: 1vh;
@@ -69,7 +69,6 @@
 }
 
 .techListContainer li {
-    /* background-color: green; */
     margin: 2vh;
 }
 
