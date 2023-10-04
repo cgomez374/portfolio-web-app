@@ -17,7 +17,7 @@ const About = () => {
           development.
         </p>
         <div className={Styles.imgContainer}>
-          <img src={profile_pic} alt="profile picture" />
+          <img src={profile_pic} alt="me" />
         </div>
       </div>
     </div>
