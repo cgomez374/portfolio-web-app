@@ -47,3 +47,28 @@
         font-size: 2.1rem;
     }
 }
+
+@media (max-width: 400px) {
+    .icons h2 {
+        font-size: 1.8rem;
+    }
+    .icons li i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-height: 470px){
+    .icons {
+        min-height: 30vh;
+    }
+}
+
+@media (max-height: 200px) {
+    .icons h2 {
+        margin-top: 1.2vh;
+        font-size: 1rem;
+    }
+    .icons li i {
+        font-size: 0.8rem;
+    }
+}

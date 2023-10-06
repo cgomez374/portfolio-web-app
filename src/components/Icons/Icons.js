@@ -7,7 +7,7 @@ const Icons = () => {
   };
   return (
     <section className={Styles.icons} id={"contact"}>
-      <h2>Let's work together!</h2>
+      <h2>let's connect</h2>
       <ul>
         <li>
           <a

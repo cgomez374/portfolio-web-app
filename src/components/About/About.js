@@ -5,7 +5,7 @@ import profile_pic from "../../assets/profile_pic.jpg";
 const About = () => {
   return (
     <div className={Styles.about}>
-      <h2>meet me</h2>
+      <h2>hello world!</h2>
       <div className={Styles.aboutInfo}>
         <p>
           I'm Carlos, a first-generation college graduate with a passion for

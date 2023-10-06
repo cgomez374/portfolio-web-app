@@ -60,6 +60,15 @@
   }
 }
 
+@media (max-width: 400px){
+  #title {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 280px) {
   .projectCard h4 {
     font-size: 0.7rem;

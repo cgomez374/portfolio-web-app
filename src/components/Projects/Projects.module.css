@@ -45,3 +45,9 @@
     }
 }
 
+@media (max-width: 400px) {
+    .projects h2 {
+        font-size: 1.8rem;
+    }
+}
+
