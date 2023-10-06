@@ -5,7 +5,10 @@ import profile_pic from "../../assets/profile_pic.jpg";
 const About = () => {
   return (
     <div className={Styles.about}>
-      <h2>hello world!</h2>
+      <h2>welcome to my portfolio!</h2>
+      <div className={Styles.imgContainer}>
+        <img src={profile_pic} alt="carlos gomez" />
+      </div>
       <div className={Styles.aboutInfo}>
         <p>
           I'm Carlos, a first-generation college graduate with a passion for
@@ -60,9 +63,6 @@ const About = () => {
             </ul>
           </li>
         </ul>
-        <div className={Styles.imgContainer}>
-          <img src={profile_pic} alt="carlos gomez" />
-        </div>
       </div>
     </div>
   );
