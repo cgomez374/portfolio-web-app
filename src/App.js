@@ -16,7 +16,6 @@ const App = () => {
             <About />
             <Icons />
             <Projects />
-            <Footer />
           </Route>
         </main>
       </Switch>

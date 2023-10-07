@@ -7,8 +7,8 @@ export const links = [
   },
   {
     type: "personal projects",
-    name: "movie reviews backend app*",
-    link: "https://movie-reviews-app.onrender.com/",
+    name: "movie reviews backend app",
+    link: "https://drive.google.com/file/d/1zx2pIb7exHbeeWlnF9-Z0ik2Y-hL80gU/view?usp=drive_link",
     img: "movie_reviews.PNG",
   },
   {
