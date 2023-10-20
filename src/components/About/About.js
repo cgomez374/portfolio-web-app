@@ -5,7 +5,7 @@ import profile_pic from "../../assets/profile_pic.jpg";
 const About = () => {
   return (
     <div className={Styles.about}>
-      <h2>welcome to my portfolio!</h2>
+      <h2>Meet Me</h2>
       <div className={Styles.imgContainer}>
         <img src={profile_pic} alt="carlos gomez" />
       </div>
