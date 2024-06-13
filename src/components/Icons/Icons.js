@@ -32,7 +32,7 @@ const Icons = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1H76zLitYNtXxoMqLJWkLv09C9fehqfzB/view?usp=sharing"
+            href="https://drive.google.com/file/d/1pIGVk8GhWEf3DJfDgIxGFekHsJ4U06T-/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
