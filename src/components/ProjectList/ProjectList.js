@@ -9,11 +9,6 @@ const ProjectList = ({ projects }) => {
   return (
     <>
       <h3 id={Styles.title}>{title}</h3>
-      {title === "personal projects" && (
-        <strong>
-          <p>*Requires 30 seconds to start</p>
-        </strong>
-      )}
       <div className={Styles.track}>
         {projects !== null &&
           projects.map((project, index) => (

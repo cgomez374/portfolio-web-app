@@ -13,9 +13,21 @@ export const links = [
   },
   {
     type: "personal projects",
-    name: "countries API with react",
-    link: "https://countries-api-app.netlify.app/",
-    img: "countries-api.png",
+    name: "Simple Ecommece Web App",
+    link: "https://simple-ecommerce-web-app.netlify.app/",
+    img: "simple-web-app.PNG",
+  },
+  {
+    type: "personal projects",
+    name: "Blog Web App",
+    link: "https://my-blog-web-app.netlify.app/",
+    img: "my-blog-app.PNG",
+  },
+  {
+    type: "personal projects",
+    name: "Support Ticket System",
+    link: "https://support-ticket-web-app.netlify.app/login",
+    img: "support-ticket-system.PNG",
   },
   {
     type: "internship projects",
@@ -34,17 +46,5 @@ export const links = [
     name: "social authentication page",
     link: "https://drive.google.com/file/d/1Y1J5Ai6mHIfSqK_QhLNUQpFTHD72Jh5m/view?usp=sharing",
     img: "mpa.png",
-  },
-  {
-    type: "personal projects",
-    name: "personal trainer landing page",
-    link: "https://cgomez374.github.io/Personal-Trainer/",
-    img: "hannessy-fitness.png",
-  },
-  {
-    type: "personal projects",
-    name: "manage corp landing page",
-    link: "https://cgomez374.github.io/manage-landing-page/",
-    img: "manage-landing-page.PNG",
   },
 ];
