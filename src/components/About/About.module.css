@@ -1,44 +1,40 @@
+/* ABOUT SECTION */
+
 .about {
     width: 100%;
-    height: auto;
-    padding: 3vh;
-    background-color: #FFFAFA;
-    color: #000;
+    background-color: var(--accent-light);
+    padding: var(--main-padding);
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     text-align: center;
-    text-transform: ;
+    min-height: 100vh;
 }
 
 .about h2 {
-    font-size: 2.8rem;
-    text-transform: capitalize;
+    font-size: var(--font-xl);
     margin: 1vh;
+    text-transform: capitalize;
 }
 
 .aboutInfo {
     width: 100%;
-    height: auto;
     padding: 1vh;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
-    line-height: 30px;
+    line-height: 1.8;
 }
 
 .about p {
     max-width: 72%;
-    height: auto;
     margin: 1vh;
     font-size: 1.1rem;
     font-weight: bold;
 }
 
-.aboutInfo a{
-    color: #000;
+.aboutInfo a {
+    color: var(--accent-dark);
 }
 
 .imgContainer {
@@ -52,7 +48,6 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
-    border: none;
     border-radius: 60%;
 }
 
@@ -62,12 +57,10 @@
 
 .techListContainer {
     width: 72%;
-    height: auto;
     padding: 1vh;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .techListContainer li {
@@ -75,10 +68,9 @@
 }
 
 .techList {
-    max-width: 100%;
-    height: 11vh;
+    width: 100%;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: 1vh auto;
@@ -87,63 +79,23 @@
 @media (max-width: 750px) {
     .aboutInfo p {
         max-width: 100%;
-        font-size: 1rem;
+        font-size: var(--font-base);
     }
 }
 
 @media (max-width: 400px) {
-    .about h2{
+    .about h2 {
         font-size: 1.8rem;
     }
-    .aboutInfo p{
-        font-size: 0.9rem;
-        width: 100%;
-    }
+
     .aboutInfo {
-        width: 100%;
-        font-size: 0.9rem;
+        font-size: var(--font-sm);
     }
-    .techListContainer {
-        width: 100%;
-    }
+
+    .aboutInfo p,
+    .techListContainer,
     .techList {
         width: 100%;
-    }
-}
-
-@media (max-height: 470px) {
-    .about {
-    }
-    .about h2 {
-        font-size: 1.5rem;
-    }
-    .about p {
-        font-size: 0.8rem;
-        width: 400px;
-        height: auto;
-    }
-    .techListContainer {
-        width: 400px;
-        height: auto;
-        flex-flow: column;
-    }
-    .techListContainer li {
-        width: 80%;
-        margin: 3vh;
-    }
-    .techListContainer .techList {
-        flex-flow: row;
-        margin: 0 auto;
-        width: 60%;
-    }
-    .techListContainer li h3 {
-        font-size: 0.9rem;
-    }
-        .techListContainer li i {
-            font-size: 1.2rem;
-        }
-
-    .imgContainer {
-        margin: 5vh;
+        font-size: var(--font-sm);
     }
 }

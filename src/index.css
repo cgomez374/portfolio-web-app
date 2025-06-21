@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+  --font-base: 1rem;
+  --font-lg: 2rem;
+  --font-xl: 2.8rem;
+  --font-sm: 0.9rem;
+  --main-padding: 3vh;
+  --accent-light: #FFFAFA;
+  --accent-dark: #000;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,29 +17,18 @@
 }
 
 body {
-  background-color: black;
+  background-color: var(--accent-dark);
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  color: var(--accent-dark);
 }
 
-ul li {
+ul,
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: #000;
-}
-
-.showcase {
-    background-image: url('./assets/showcase.jpg');
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    padding-top: 9rem;
-    color: #000;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 2rem;
+  color: var(--accent-dark);
 }

@@ -1,45 +1,41 @@
+/* PROJECTS */
+
 .projects {
-    background-color: #FFFAFA;
+    background-color: var(--accent-light);
     width: 100%;
-    height: auto;
-    padding-top: 3vh;
-    margin: 0;
+    padding-top: var(--main-padding);
     text-align: center;
-    color: #000;
+    min-height: 100vh;
 }
 
 .projects h2 {
+    font-size: var(--font-xl);
     margin: 1vh;
-    font-size: 2.8rem;
     text-transform: capitalize;
 }
 
 .listContainer {
     width: 90%;
-    height: auto;
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    text-align: left;
     align-items: center;
+    text-align: left;
 }
 
 .listContainer h3 {
     font-size: 1.8rem;
-    text-transform: capitalize;
     margin: 2vh;
-
+    text-transform: capitalize;
 }
 
-@media (max-width: 1250px){
+@media (max-width: 1250px) {
     .listContainer {
         width: 98%;
     }
 }
 
-@media (max-width: 1030px){
+@media (max-width: 1030px) {
     .listContainer {
         text-align: center;
     }
@@ -50,4 +46,3 @@
         font-size: 1.8rem;
     }
 }
-

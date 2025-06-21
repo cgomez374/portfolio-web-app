@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "./About.module.css";
 import profile_pic from "../../assets/profile_pic.jpg";
 
