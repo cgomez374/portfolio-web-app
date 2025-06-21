@@ -26,7 +26,7 @@ export const links = [
   {
     type: "personal projects",
     name: "Support Ticket System",
-    link: "https://support-ticket-web-app.netlify.app/login",
+    link: "https://support-ticket-web-app.netlify.app/",
     img: "support-ticket-system.PNG",
   },
   {
