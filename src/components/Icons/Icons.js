@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "./Icons.module.css";
 
 const Icons = () => {
@@ -15,11 +14,11 @@ const Icons = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-github fa-2x"></i>
+            <i className="fab fa-github fa-2x"></i>
           </a>
         </li>
         <li onClick={sendEmail}>
-          <i class="fas fa-envelope fa-2x"></i>
+          <i className="fas fa-envelope fa-2x"></i>
         </li>
         <li>
           <a
@@ -27,7 +26,7 @@ const Icons = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fab fa-linkedin fa-2x"></i>
+            <i className="fab fa-linkedin fa-2x"></i>
           </a>
         </li>
         <li>
@@ -36,7 +35,7 @@ const Icons = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <i class="fas fa-file fa-2x"></i>
+            <i className="fas fa-file fa-2x"></i>
           </a>
         </li>
       </ul>

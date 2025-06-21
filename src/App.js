@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./components/Header/Header";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
@@ -9,14 +8,12 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <main>
-          <Route to="/">
-            <Header />
-            <About />
-            <Icons />
-            <Projects />
-          </Route>
-        </main>
+        <Route to="/">
+          <Header />
+          <About />
+          <Icons />
+          <Projects />
+        </Route>
       </Switch>
     </Router>
   );

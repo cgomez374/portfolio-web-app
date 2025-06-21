@@ -1,4 +1,3 @@
-import React from "react";
 import Styles from "./ProjectsList.module.css";
 
 const ProjectList = ({ projects }) => {
@@ -9,6 +8,7 @@ const ProjectList = ({ projects }) => {
   return (
     <>
       <h3 id={Styles.title}>{title}</h3>
+      {title === "personal projects" && <h4>Logins on request!</h4>}
       <div className={Styles.track}>
         {projects !== null &&
           projects.map((project, index) => (
