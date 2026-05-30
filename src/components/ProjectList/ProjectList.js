@@ -11,10 +11,13 @@ const ProjectList = ({ projects }) => {
       {title === "personal projects" && <h4>Logins on request!</h4>}
       <div className={Styles.track}>
         {projects !== null &&
-          projects.map((project, index) => (
-            <div className={Styles.projectCard} key={index}>
+          projects.map((project) => (
+            <div className={Styles.projectCard} key={project.name}>
               <a href={project.link} target="_blank" rel="noreferrer">
-                <img src={project.img} alt="project screenshot" />
+                <img
+                  src={project.img}
+                  alt={`${project.name} project screenshot`}
+                />
                 <h4>{project.name}</h4>
               </a>
             </div>

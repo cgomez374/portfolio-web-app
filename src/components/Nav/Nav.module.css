@@ -1,7 +1,7 @@
 /* NAVIGATION */
 
 .nav {
-  background-color: #651c29;
+  background-color: var(--color-text-dark);
   width: 100%;
   min-height: 3rem;
   display: flex;
@@ -10,11 +10,11 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px var(--color-shadow);
 }
 
 .list {
-  width: 35%;
+  width: 45%;
   min-height: 3rem;
   display: flex;
   justify-content: space-evenly;
@@ -22,8 +22,8 @@
 }
 
 .list a {
-  color: #f9f9f6;
-  font-size: 1.5rem;
+  color: var(--color-background);
+  font-size: var(--font-sm);
   text-transform: capitalize;
 }
 

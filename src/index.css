@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 :root {
+  /* Typography */
   --font-base: 1rem;
   --font-lg: 2rem;
   --font-xl: 2.8rem;
   --font-sm: 0.9rem;
-  --main-padding: 3vh;
+
+  /* Colors */
+  --color-primary: #651c29;
+  --color-background: #f9f9f6;
+  --color-text-dark: #000;
+  --color-text-light: #FFFAFA;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --main-padding: 3rem;
+
+  /* Legacy aliases for backwards compatibility */
   --accent-light: #FFFAFA;
   --accent-dark: #000;
 }
@@ -17,10 +34,10 @@
 }
 
 body {
-  background-color: var(--accent-dark);
+  background-color: var(--color-text-dark);
   font-family: 'Montserrat', sans-serif;
   overflow-x: hidden;
-  color: var(--accent-dark);
+  color: var(--color-text-dark);
 }
 
 ul,
@@ -30,5 +47,5 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--accent-dark);
+  color: var(--color-text-dark);
 }

@@ -13,18 +13,26 @@ const Icons = () => {
             href="https://github.com/cgomez374"
             target="_blank"
             rel="noreferrer"
+            aria-label="Visit my GitHub profile"
           >
             <i className="fab fa-github fa-2x"></i>
           </a>
         </li>
-        <li onClick={sendEmail}>
-          <i className="fas fa-envelope fa-2x"></i>
+        <li>
+          <button
+            onClick={sendEmail}
+            aria-label="Send me an email"
+            className={Styles.emailButton}
+          >
+            <i className="fas fa-envelope fa-2x"></i>
+          </button>
         </li>
         <li>
           <a
             href="https://www.linkedin.com/in/cgomez374/"
             target="_blank"
             rel="noreferrer"
+            aria-label="Connect on LinkedIn"
           >
             <i className="fab fa-linkedin fa-2x"></i>
           </a>
@@ -34,6 +42,7 @@ const Icons = () => {
             href="https://drive.google.com/file/d/1pIGVk8GhWEf3DJfDgIxGFekHsJ4U06T-/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
+            aria-label="View my resume"
           >
             <i className="fas fa-file fa-2x"></i>
           </a>

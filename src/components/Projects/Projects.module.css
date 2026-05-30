@@ -10,7 +10,7 @@
 
 .projects h2 {
     font-size: var(--font-xl);
-    margin: 1vh;
+    margin: var(--spacing-xs);
     text-transform: capitalize;
 }
 
@@ -25,7 +25,7 @@
 
 .listContainer h3 {
     font-size: 1.8rem;
-    margin: 2vh;
+    margin: var(--spacing-md);
     text-transform: capitalize;
 }
 

@@ -1,33 +1,21 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { links } from "../../Links";
 import Styles from "./Projects.module.css";
 import ProjectList from "../ProjectList/ProjectList";
 
 const Projects = () => {
-  const [personalProjects, setPersonalProjects] = useState([]);
-  const [mpProjects, setMpProjects] = useState([]);
+  const personalProjects = links.filter(
+    (project) => project.type === "personal projects",
+  );
+  const internshipProjects = links.filter(
+    (project) => project.type === "internship projects",
+  );
 
-  const getProjects = (type) => {
-    let projects = [];
-    links.forEach((project) => {
-      if (project.type === type) {
-        projects.push(project);
-      }
-    });
-
-    if (type === "personal projects") setPersonalProjects(projects);
-    else if (type === "internship projects") setMpProjects(projects);
-  };
-
-  useEffect(() => {
-    getProjects("personal projects");
-    getProjects("internship projects");
-  }, []);
   return (
     <div className={Styles.projects} id={"projects"}>
       <div className={Styles.listContainer}>
         <ProjectList projects={personalProjects} />
-        <ProjectList projects={mpProjects} />
+        <ProjectList projects={internshipProjects} />
       </div>
     </div>
   );

@@ -1,12 +1,40 @@
 import Styles from "./About.module.css";
 import profile_pic from "../../assets/profile_pic.jpg";
+import TechStack from "../TechStack/TechStack";
+
+const TECH_CATEGORIES = [
+  {
+    category: "front-end web technologies",
+    icons: [
+      { className: "fab fa-html5 fa-2x", label: "HTML5" },
+      { className: "fab fa-css3-alt fa-2x", label: "CSS3" },
+      { className: "fab fa-js fa-2x", label: "JavaScript" },
+      { className: "fab fa-react fa-2x", label: "React" },
+    ],
+  },
+  {
+    category: "backend web technologies",
+    icons: [
+      { className: "fab fa-python fa-2x", label: "Python" },
+      { className: "fas fa-flask fa-2x", label: "Flask" },
+      { className: "fas fa-database fa-2x", label: "Database" },
+    ],
+  },
+  {
+    category: "other technologies",
+    icons: [
+      { className: "fab fa-git fa-2x", label: "Git" },
+      { className: "fab fa-aws fa-2x", label: "AWS" },
+    ],
+  },
+];
 
 const About = () => {
   return (
-    <div className={Styles.about}>
+    <section className={Styles.about} id={"about"}>
       <h2>Meet Me</h2>
       <div className={Styles.imgContainer}>
-        <img src={profile_pic} alt="carlos gomez" />
+        <img src={profile_pic} alt="Carlos Gomez headshot" />
       </div>
       <div className={Styles.aboutInfo}>
         <p>
@@ -19,51 +47,16 @@ const About = () => {
           development.
         </p>
         <ul className={Styles.techListContainer}>
-          <li>
-            <h3>front-end web technologies</h3>
-            <ul className={Styles.techList}>
-              <li>
-                <i className="fab fa-html5 fa-2x"></i>
-              </li>
-              <li>
-                <i className="fab fa-css3-alt fa-2x"></i>
-              </li>
-              <li>
-                <i className="fab fa-js fa-2x"></i>
-              </li>
-              <li>
-                <i className="fab fa-react fa-2x"></i>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>backend web technologies</h3>
-            <ul className={Styles.techList}>
-              <li>
-                <i className="fab fa-python fa-2x"></i>
-              </li>
-              <li>
-                <i className="fas fa-flask fa-2x"></i>
-              </li>
-              <li>
-                <i className="fas fa-database fa-2x"></i>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h3>other technologies</h3>
-            <ul className={Styles.techList}>
-              <li>
-                <i className="fab fa-git fa-2x"></i>
-              </li>
-              <li>
-                <i className="fab fa-aws fa-2x"></i>
-              </li>
-            </ul>
-          </li>
+          {TECH_CATEGORIES.map((tech) => (
+            <TechStack
+              key={tech.category}
+              category={tech.category}
+              icons={tech.icons}
+            />
+          ))}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

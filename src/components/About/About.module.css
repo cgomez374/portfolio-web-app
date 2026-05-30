@@ -4,6 +4,7 @@
     width: 100%;
     background-color: var(--accent-light);
     padding: var(--main-padding);
+    padding-top: calc(var(--main-padding) + 3rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,13 +14,13 @@
 
 .about h2 {
     font-size: var(--font-xl);
-    margin: 1vh;
+    margin: var(--spacing-xs);
     text-transform: capitalize;
 }
 
 .aboutInfo {
     width: 100%;
-    padding: 1vh;
+    padding: var(--spacing-xs);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +29,7 @@
 
 .about p {
     max-width: 72%;
-    margin: 1vh;
+    margin: var(--spacing-xs);
     font-size: 1.1rem;
     font-weight: bold;
 }
@@ -38,9 +39,9 @@
 }
 
 .imgContainer {
-    width: 25vh;
-    height: 25vh;
-    margin: 1vh;
+    width: 250px;
+    height: 250px;
+    margin: var(--spacing-xs);
 }
 
 .imgContainer img {
@@ -57,14 +58,15 @@
 
 .techListContainer {
     width: 72%;
-    padding: 1vh;
+    padding: var(--spacing-xs);
+    margin-top: var(--spacing-lg);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
 .techListContainer li {
-    margin: 1vh;
+    margin: var(--spacing-xs);
 }
 
 .techList {
@@ -73,7 +75,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 1vh auto;
+    margin: var(--spacing-xs) auto;
 }
 
 @media (max-width: 750px) {

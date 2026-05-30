@@ -2,21 +2,21 @@
 
 .track {
   width: 100%;
-  margin: 1rem auto;
+  margin: var(--spacing-sm) auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .projectCard {
-  background-color: var(--accent-dark);
+  background-color: var(--color-text-dark);
   width: 18rem;
   min-height: 14rem;
-  margin: 1.5rem;
+  margin: var(--spacing-md);
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px var(--color-shadow);
 }
 
 .projectCard img {
@@ -30,8 +30,8 @@
 .projectCard h4 {
   text-align: center;
   font-size: 1rem;
-  color: #f9f9f6;
-  margin-top: 1vh;
+  color: var(--color-background);
+  margin-top: var(--spacing-xs);
   text-transform: capitalize;
 }
 
