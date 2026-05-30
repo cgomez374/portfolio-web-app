@@ -1,14 +1,27 @@
 .techList {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   list-style: none;
   padding: 0;
-  gap: 1rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .techList li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.techList i {
+  color: var(--color-accent-primary);
+  font-size: 1.8rem !important;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.techList i:hover {
+  color: var(--color-accent-secondary);
+  transform: scale(1.15) rotateZ(-10deg);
 }

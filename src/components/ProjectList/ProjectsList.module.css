@@ -1,55 +1,137 @@
-/* PROJECT CARDS */
+/* PROJECT CARDS - GRID GALLERY */
+
+.title {
+  font-size: 2rem;
+  color: var(--color-accent-primary);
+  text-transform: capitalize;
+  margin: var(--spacing-lg) 0 var(--spacing-sm);
+  text-align: center;
+  position: relative;
+  padding-bottom: var(--spacing-md);
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
+}
 
 .track {
   width: 100%;
-  margin: var(--spacing-sm) auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: var(--spacing-lg) auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  padding: 0 var(--spacing-md);
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .projectCard {
-  background-color: var(--color-text-dark);
-  width: 18rem;
-  min-height: 14rem;
-  margin: var(--spacing-md);
+  background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-tertiary) 100%);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
-  box-shadow: 0 3px 10px var(--color-shadow);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px var(--color-shadow);
+  height: 100%;
+}
+
+.projectCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 217, 255, 0.2);
+  border-color: var(--color-accent-primary);
 }
 
 .projectCard img {
   width: 100%;
-  flex-grow: 1;
+  height: 180px;
   object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.projectCard:hover img {
+  filter: brightness(0.6) blur(2px);
+  transform: scale(1.05);
+}
+
+.projectCardContent {
+  padding: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .projectCard h4 {
-  text-align: center;
-  font-size: 1rem;
-  color: var(--color-background);
-  margin-top: var(--spacing-xs);
+  font-size: 1.1rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
   text-transform: capitalize;
+  transition: color 0.3s ease;
+  font-weight: 600;
 }
 
-@media (max-width: 770px) {
+.projectCard:hover h4 {
+  color: var(--color-accent-primary);
+}
+
+.projectType {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  background: rgba(0, 217, 255, 0.15);
+  color: var(--color-accent-primary);
+  border-radius: 20px;
+  text-transform: capitalize;
+  margin-top: auto;
+  border: 1px solid var(--color-border);
+}
+
+.projectCard a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
   .track {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-sm);
+  }
+
+  .projectCard {
+    min-height: 300px;
   }
 }
 
-@media (max-width: 466px) {
-  .projectCard h4 {
-    font-size: 0.9rem;
+@media (max-width: 480px) {
+  .track {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-sm);
   }
-}
 
-@media (max-width: 280px) {
-  .projectCard h4 {
-    font-size: 0.7rem;
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .projectCard img {
+    height: 150px;
   }
 }
