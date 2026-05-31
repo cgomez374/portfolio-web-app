@@ -1,7 +1,7 @@
 /* NAVIGATION */
 
 .nav {
-  background: linear-gradient(180deg, var(--color-bg-secondary) 0%, rgba(21, 29, 63, 0.8) 100%);
+  background: linear-gradient(180deg, var(--color-bg-secondary) 0%, rgba(17, 17, 17, 0.8) 100%);
   backdrop-filter: blur(10px);
   width: 100%;
   min-height: 3.5rem;

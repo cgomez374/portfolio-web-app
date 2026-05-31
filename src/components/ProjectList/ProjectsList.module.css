@@ -25,12 +25,10 @@
   width: 100%;
   margin: var(--spacing-lg) auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
   padding: 0 var(--spacing-md);
   max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .projectCard {
@@ -44,18 +42,17 @@
   cursor: pointer;
   position: relative;
   box-shadow: 0 4px 15px var(--color-shadow);
-  height: 100%;
 }
 
 .projectCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 217, 255, 0.2);
+  box-shadow: 0 12px 30px rgba(208, 208, 208, 0.15);
   border-color: var(--color-accent-primary);
 }
 
 .projectCard img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: cover;
   transition: all 0.3s ease;
   filter: brightness(0.9);
@@ -67,7 +64,7 @@
 }
 
 .projectCardContent {
-  padding: var(--spacing-md);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -76,9 +73,9 @@
 }
 
 .projectCard h4 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-text-primary);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: 0.5rem;
   text-transform: capitalize;
   transition: color 0.3s ease;
   font-weight: 600;
@@ -92,7 +89,7 @@
   display: inline-block;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
-  background: rgba(0, 217, 255, 0.15);
+  background: rgba(208, 208, 208, 0.12);
   color: var(--color-accent-primary);
   border-radius: 20px;
   text-transform: capitalize;
@@ -110,28 +107,56 @@
 
 @media (max-width: 768px) {
   .track {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
     padding: 0 var(--spacing-sm);
   }
-
-  .projectCard {
-    min-height: 300px;
-  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .track {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
     padding: 0 var(--spacing-sm);
+    place-items: center;
   }
 
   .title {
     font-size: 1.6rem;
   }
 
+  .projectCard {
+    width: 80%;
+    min-height: 230px;
+    text-align: center;
+  }
+
   .projectCard img {
-    height: 150px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 500px) {
+  .projectCard {
+    width: 85%;
+    min-height: auto;
+  }
+
+  .projectCardContent {
+    padding: 1.6rem;
+  }
+
+  .projectCard h4 {
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .projectType {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .projectCard img {
+    height: 120px;
   }
 }

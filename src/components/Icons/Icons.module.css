@@ -67,9 +67,9 @@
 .emailButton:hover {
   color: var(--color-accent-primary);
   border-color: var(--color-accent-primary);
-  background: rgba(0, 217, 255, 0.1);
+  background: rgba(208, 208, 208, 0.08);
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(208, 208, 208, 0.15);
 }
 
 .emailButton {

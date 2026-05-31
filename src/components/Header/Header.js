@@ -41,7 +41,7 @@ const Header = () => {
         onMouseEnter={(e) => {
           e.target.style.backgroundColor = "var(--color-accent-secondary)";
           e.target.style.transform = "translateY(-2px)";
-          e.target.style.boxShadow = "0 8px 20px rgba(0, 217, 255, 0.3)";
+          e.target.style.boxShadow = "0 8px 20px rgba(208, 208, 208, 0.25)";
         }}
         onMouseLeave={(e) => {
           e.target.style.backgroundColor = "var(--color-accent-primary)";
