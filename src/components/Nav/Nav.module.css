@@ -16,11 +16,99 @@
   border-bottom: 1px solid var(--color-border);
 }
 
-.list {
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: var(--spacing-lg);
+  gap: 5px;
+  padding: var(--spacing-md);
+  position: relative;
+  z-index: 3;
+}
+
+.hamburgerIcon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburgerIcon::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 2px;
+  top: -8px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburgerIcon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 2px;
+  top: 8px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover .hamburgerIcon,
+.hamburger:hover .hamburgerIcon::before,
+.hamburger:hover .hamburgerIcon::after {
+  background: var(--color-accent-primary);
+}
+
+.list {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0;
+  background: linear-gradient(180deg, var(--color-bg-secondary) 0%, rgba(17, 17, 17, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 4px 30px var(--color-shadow);
+  padding: var(--spacing-md) 0;
+  animation: slideDown 0.3s ease backwards;
+}
+
+.listOpen {
+  display: flex;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.list li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.list li:last-child {
+  border-bottom: none;
 }
 
 .list a {
@@ -29,13 +117,16 @@
   text-transform: capitalize;
   position: relative;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, background-color 0.2s ease;
+  display: block;
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-decoration: none;
 }
 
 .list a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
   width: 0;
   height: 2px;
@@ -45,6 +136,7 @@
 
 .list a:hover {
   color: var(--color-accent-primary);
+  background-color: rgba(255, 255, 255, 0.05);
 }
 
 .list a:hover::after {
@@ -56,21 +148,15 @@
     padding: 0 var(--spacing-sm);
   }
 
-  .list {
-    gap: var(--spacing-md);
-  }
-
   .list a {
     font-size: 0.85rem;
+    padding: var(--spacing-md) var(--spacing-md);
   }
 }
 
 @media (max-width: 480px) {
-  .list {
-    gap: var(--spacing-sm);
-  }
-
   .list a {
     font-size: 0.75rem;
+    padding: var(--spacing-sm) var(--spacing-md);
   }
 }
