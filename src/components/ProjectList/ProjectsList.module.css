@@ -139,24 +139,31 @@
 @media (max-width: 500px) {
   .projectCard {
     width: 85%;
-    min-height: auto;
+    min-height: 250px;
   }
 
   .projectCardContent {
-    padding: 1.6rem;
+    /* padding: 0.6rem; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .projectCard h4 {
-    font-size: 0.95rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    /* margin-bottom: 0.2rem; */
   }
 
   .projectType {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.6rem;
+    display: block;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
   }
 
   .projectCard img {
-    height: 120px;
+    height: 210px;
   }
 }
