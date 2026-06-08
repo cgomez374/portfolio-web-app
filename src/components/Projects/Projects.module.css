@@ -23,7 +23,7 @@
   font-size: var(--font-xl);
   margin: var(--spacing-md) 0;
   text-transform: capitalize;
-  color: var(--color-text-primary);
+  color: var(--color-accent-primary);
 }
 
 .listContainer {
@@ -41,7 +41,7 @@
   font-size: 1.8rem;
   margin: var(--spacing-lg) 0 var(--spacing-md);
   text-transform: capitalize;
-  color: var(--color-text-primary);
+  color: var(--color-accent-primary);
 }
 
 @media (max-width: 768px) {

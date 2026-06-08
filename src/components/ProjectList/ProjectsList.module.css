@@ -46,7 +46,7 @@
 
 .projectCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(208, 208, 208, 0.15);
+  box-shadow: 0 12px 30px rgba(33, 150, 243, 0.15);
   border-color: var(--color-accent-primary);
 }
 
@@ -89,12 +89,12 @@
   display: inline-block;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
-  background: rgba(208, 208, 208, 0.12);
+  background: rgba(33, 150, 243, 0.1);
   color: var(--color-accent-primary);
   border-radius: 20px;
   text-transform: capitalize;
   margin-top: auto;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-accent-primary);
 }
 
 .projectCard a {
