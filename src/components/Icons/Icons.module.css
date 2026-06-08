@@ -1,69 +1,120 @@
-/* ICONS */
+/* CONTACT SECTION */
 
 .icons {
-    background-color: var(--color-text-dark);
-    color: var(--color-text-light);
-    width: 100%;
-    padding: var(--spacing-lg) var(--spacing-sm);
-    min-height: 15rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
+  background: var(--color-bg-secondary);
+  color: var(--color-text-primary);
+  width: 100%;
+  padding: var(--spacing-xl) var(--spacing-sm);
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  border-top: 1px solid var(--color-border);
+}
+
+.icons::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent-primary), transparent);
 }
 
 .icons h2 {
-    font-size: 2.4rem;
+  font-size: 2.2rem;
+  color: var(--color-accent-primary);
+  margin-bottom: var(--spacing-xl);
+  font-weight: 600;
 }
 
 .icons ul {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
 }
 
 .icons ul li {
-    margin: var(--spacing-lg);
-    cursor: pointer;
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
 }
 
-.icons ul li a {
-    color: var(--color-text-light);
+.icons ul li a,
+.emailButton {
+  color: var(--color-text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+}
+
+.icons ul li a:hover,
+.emailButton:hover {
+  color: var(--color-accent-primary);
+  border-color: var(--color-accent-primary);
+  background: rgba(33, 150, 243, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(33, 150, 243, 0.15);
 }
 
 .emailButton {
-    background: none;
-    border: none;
-    color: var(--color-text-light);
-    cursor: pointer;
-    padding: 0;
-    font-size: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
+  .icons h2 {
+    font-size: 1.9rem;
+  }
 
-    .icons,
-    .icons ul {
-        font-size: var(--font-sm);
-    }
-
-    .icons h2 {
-        font-size: 2.1rem;
-    }
+  .icons ul {
+    gap: var(--spacing-md);
+  }
 }
 
-@media (max-width: 400px) {
-    .icons h2 {
-        font-size: 1.8rem;
-    }
+@media (max-width: 500px) {
+  .icons h2 {
+    font-size: 1.6rem !important;
+  }
+}
 
-    .icons li i {
-        font-size: 1.5rem;
-    }
+@media (max-width: 480px) {
+  .icons {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    min-height: 10rem;
+  }
+
+  .icons h2 {
+    font-size: 1.6rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .icons ul {
+    gap: var(--spacing-md);
+  }
+
+  .icons ul li a,
+  .emailButton {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icons ul li a i,
+  .emailButton i {
+    font-size: 1.4rem !important;
+  }
 }

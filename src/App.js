@@ -13,8 +13,8 @@ const App = () => {
         <Route path="/">
           <Header />
           <About />
-          <Icons />
           <Projects />
+          <Icons />
         </Route>
       </Switch>
     </Router>

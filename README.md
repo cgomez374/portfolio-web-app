@@ -81,32 +81,6 @@ The application will open at `http://localhost:3000`
 npm run build
 ```
 
-## Styling & Design Tokens
-
-### CSS Variables (src/index.css)
-
-**Colors**
-
-- `--color-primary`: #651c29 (burgundy accent)
-- `--color-background`: #f9f9f6 (light background)
-- `--color-text-dark`: #000 (dark text)
-- `--color-text-light`: #FFFAFA (light text)
-
-**Spacing Scale**
-
-- `--spacing-xs`: 0.5rem
-- `--spacing-sm`: 1rem
-- `--spacing-md`: 1.5rem
-- `--spacing-lg`: 2rem
-- `--spacing-xl`: 3rem
-
-**Typography**
-
-- `--font-base`: 1rem
-- `--font-sm`: 0.9rem
-- `--font-lg`: 2rem
-- `--font-xl`: 2.8rem
-
 ## License
 
 This project is personal portfolio work. Rights reserved by Carlos Gomez.
