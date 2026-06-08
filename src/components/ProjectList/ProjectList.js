@@ -1,27 +1,27 @@
 import Styles from "./ProjectsList.module.css";
 
 const ProjectList = ({ projects }) => {
-  let title;
-  if (projects[0] !== undefined) {
-    title = projects[0].type;
-  }
+  if (!projects || projects.length === 0) return null;
+
+  const title = projects[0]?.type;
+
   return (
     <>
       <h3 id={Styles.title}>{title}</h3>
-      {title === "personal projects" && <h4>Logins on request!</h4>}
       <div className={Styles.track}>
-        {projects !== null &&
-          projects.map((project) => (
-            <div className={Styles.projectCard} key={project.name}>
-              <a href={project.link} target="_blank" rel="noreferrer">
-                <img
-                  src={project.img}
-                  alt={`${project.name} project screenshot`}
-                />
+        {projects.map((project) => (
+          <div className={Styles.projectCard} key={project.name}>
+            <a href={project.link} target="_blank" rel="noreferrer">
+              <img
+                src={project.img}
+                alt={`${project.name} project screenshot`}
+              />
+              <div className={Styles.projectCardContent}>
                 <h4>{project.name}</h4>
-              </a>
-            </div>
-          ))}
+              </div>
+            </a>
+          </div>
+        ))}
       </div>
     </>
   );

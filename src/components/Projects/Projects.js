@@ -13,6 +13,7 @@ const Projects = () => {
 
   return (
     <div className={Styles.projects} id={"projects"}>
+      <h2>Featured Work</h2>
       <div className={Styles.listContainer}>
         <ProjectList projects={personalProjects} />
         <ProjectList projects={internshipProjects} />
