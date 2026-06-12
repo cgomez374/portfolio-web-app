@@ -105,7 +105,7 @@
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .track {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--spacing-md);
@@ -113,34 +113,22 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .track {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
-    padding: 0 var(--spacing-sm);
-    place-items: center;
-  }
-
-  .title {
-    font-size: 1.6rem;
-  }
-
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+      padding: 0 var(--spacing-sm);
+      place-items: center;
+    }
   .projectCard {
     width: 80%;
     min-height: 230px;
     text-align: center;
   }
 
-  .projectCard img {
-    height: 140px;
-  }
-}
-
-@media (max-width: 500px) {
-  .projectCard {
-    width: 85%;
-    min-height: 250px;
-  }
+    .title {
+      font-size: 1.6rem;
+    }
 
   .projectCardContent {
     /* padding: 0.6rem; */
