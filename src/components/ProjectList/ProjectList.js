@@ -3,11 +3,8 @@ import Styles from "./ProjectsList.module.css";
 const ProjectList = ({ projects }) => {
   if (!projects || projects.length === 0) return null;
 
-  const title = projects[0]?.type;
-
   return (
     <>
-      <h3 id={Styles.title}>{title}</h3>
       <div className={Styles.track}>
         {projects.map((project) => (
           <div className={Styles.projectCard} key={project.name}>
