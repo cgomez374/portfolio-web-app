@@ -2,7 +2,7 @@
 
 .about {
   width: 100%;
-  background: var(--color-bg-secondary);
+  background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
   padding: var(--main-padding);
   display: flex;
   flex-direction: column;
@@ -190,16 +190,6 @@
 
   .techStackContainer {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 500px) {
-  .about h2 {
-    font-size: 2.2rem !important;
-  }
-
-  .about p {
-    font-size: 1rem !important;
   }
 }
 
