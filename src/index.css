@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
   /* Typography */
@@ -44,7 +44,7 @@
 
 body {
   background-color: var(--color-bg-primary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   overflow-x: hidden;
   color: var(--color-text-primary);
   scroll-behavior: smooth;
