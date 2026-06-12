@@ -32,22 +32,27 @@
 }
 
 .projectCard {
-  background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-tertiary) 100%);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
+  background: rgba(33, 150, 243, 0.08);
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: default;
+  /* border: 1px solid var(--color-border); */
+  /* border-radius: 12px; */
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  /* transition: all 0.3s ease; */
+  /* cursor: pointer; */
   position: relative;
   box-shadow: 0 4px 15px var(--color-shadow);
 }
 
 .projectCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(33, 150, 243, 0.15);
+  background: rgba(33, 150, 243, 0.15);
   border-color: var(--color-accent-primary);
+  box-shadow: 0 8px 16px rgba(33, 150, 243, 0.15);
 }
 
 .projectCard img {
@@ -89,12 +94,12 @@
   display: inline-block;
   font-size: 0.75rem;
   padding: 0.4rem 0.8rem;
-  background: rgba(33, 150, 243, 0.1);
+  background: rgba(208, 208, 208, 0.12);
   color: var(--color-accent-primary);
   border-radius: 20px;
   text-transform: capitalize;
   margin-top: auto;
-  border: 1px solid var(--color-accent-primary);
+  border: 1px solid var(--color-border);
 }
 
 .projectCard a {
@@ -115,43 +120,44 @@
 
 @media (max-width: 700px) {
   .track {
-      grid-template-columns: 1fr;
-      gap: var(--spacing-md);
-      padding: 0 var(--spacing-sm);
-      place-items: center;
-    }
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    padding: 0 var(--spacing-sm);
+    place-items: center;
+  }
+
   .projectCard {
     width: 80%;
     min-height: 230px;
     text-align: center;
   }
 
-  .projectCard img {
-    height: 140px;
-  }
-}
-
-@media (max-width: 500px) {
-  .projectCard {
-    width: 85%;
-    min-height: auto;
+  .title {
+    font-size: 1.6rem;
   }
 
   .projectCardContent {
-    padding: 1.6rem;
+    /* padding: 0.6rem; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .projectCard h4 {
-    font-size: 0.95rem;
-    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    /* margin-bottom: 0.2rem; */
   }
 
   .projectType {
-    font-size: 0.7rem;
-    padding: 0.3rem 0.6rem;
+    display: block;
+    font-size: 0.65rem;
+    padding: 0.25rem 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
   }
 
   .projectCard img {
-    height: 120px;
+    height: 210px;
   }
 }
