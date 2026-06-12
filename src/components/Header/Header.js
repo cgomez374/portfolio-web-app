@@ -29,22 +29,24 @@ const Header = () => {
         style={{
           display: "inline-block",
           padding: "0.75rem 2rem",
-          backgroundColor: "var(--color-accent-primary)",
-          color: "var(--color-bg-primary)",
-          borderRadius: "4px",
+          backgroundColor: "rgba(33, 150, 243, 0.08)",
+          color: "var(--color-accent-primary)",
+          borderRadius: "8px",
           fontWeight: "600",
           transition: "all 0.3s ease",
           textTransform: "uppercase",
           fontSize: "0.9rem",
           letterSpacing: "1px",
+          border: "1px solid var(--color-border)",
         }}
         onMouseEnter={(e) => {
-          e.target.style.backgroundColor = "var(--color-accent-secondary)";
+          e.target.style.backgroundColor = "rgba(33, 150, 243, 0.15)";
           e.target.style.transform = "translateY(-2px)";
-          e.target.style.boxShadow = "0 8px 20px rgba(208, 208, 208, 0.25)";
+          e.target.style.boxShadow = "0 8px 16px rgba(33, 150, 243, 0.15)";
+          e.target.style.borderColor = "var(--color-accent-primary)";
         }}
         onMouseLeave={(e) => {
-          e.target.style.backgroundColor = "var(--color-accent-primary)";
+          e.target.style.backgroundColor = "rgba(33, 150, 243, 0.08)";
           e.target.style.transform = "translateY(0)";
           e.target.style.boxShadow = "none";
         }}
