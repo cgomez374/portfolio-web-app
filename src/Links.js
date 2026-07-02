@@ -13,8 +13,8 @@ export const links = [
   },
   {
     type: "personal projects",
-    name: "Simple Ecommece Web App",
-    link: "https://github.com/cgomez374/ecommerce-app",
+    name: "Simple E-commerce Web App",
+    link: "https://simple-ecommerce-web-app.netlify.app/",
     img: "simple-web-app.PNG",
   },
   {
