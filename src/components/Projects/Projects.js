@@ -16,7 +16,7 @@ const Projects = () => {
       <h2>Featured Work</h2>
       <div className={Styles.listContainer}>
         <ProjectList projects={personalProjects} />
-        <ProjectList projects={internshipProjects} />
+        {/* <ProjectList projects={internshipProjects} /> */}
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ export const links = [
   },
   {
     type: "personal projects",
-    name: "Simple Ecommece Web App",
+    name: "Simple E-commerce Web App",
     link: "https://simple-ecommerce-web-app.netlify.app/",
     img: "simple-web-app.PNG",
   },
@@ -26,7 +26,7 @@ export const links = [
   {
     type: "personal projects",
     name: "Support Ticket System",
-    link: "https://support-ticket-web-app.netlify.app/",
+    link: "https://github.com/cgomez374/support-ticketing-system",
     img: "support-ticket-system.PNG",
   },
   {
