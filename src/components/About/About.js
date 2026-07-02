@@ -24,7 +24,6 @@ const TECH_CATEGORIES = [
     icons: [
       { className: "fab fa-git fa-2x", label: "Git" },
       { className: "fab fa-aws fa-2x", label: "AWS" },
-      // { className: "fa-brands fa-openai", label: "AI tools" },
     ],
   },
 ];
@@ -32,7 +31,7 @@ const TECH_CATEGORIES = [
 const About = () => {
   return (
     <section className={Styles.about} id={"about"}>
-      <h2>About Me</h2>
+      <h2>About</h2>
       <div className={Styles.aboutInfo}>
         <div className={Styles.profileSection}>
           <div className={Styles.imgContainer}>

@@ -7,9 +7,9 @@ const Projects = () => {
   const personalProjects = links.filter(
     (project) => project.type === "personal projects",
   );
-  const internshipProjects = links.filter(
-    (project) => project.type === "internship projects",
-  );
+  // const internshipProjects = links.filter(
+  //   (project) => project.type === "internship projects",
+  // );
 
   return (
     <div className={Styles.projects} id={"projects"}>

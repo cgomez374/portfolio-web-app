@@ -1,7 +1,7 @@
 /* PROJECTS */
 
 .projects {
-  background: var(--color-bg-primary);
+  background: linear-gradient(180deg, var(--color-bg-primary) 0%, var(--color-bg-secondary) 100%);
   width: 100%;
   padding: var(--main-padding) 0;
   text-align: center;
@@ -55,16 +55,6 @@
 
   .listContainer h3 {
     font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .projects h2 {
-    font-size: 2rem !important;
-  }
-
-  .listContainer h3 {
-    font-size: 1.3rem !important;
   }
 }
 
