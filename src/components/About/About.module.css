@@ -203,7 +203,7 @@
   }
 
   .aboutInfo {
-    padding: var(--spacing-md) 0;
+    padding: var(--spacing-sm);
   }
 
   .imgContainer {
@@ -222,5 +222,12 @@
 
   .techGrid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .techBadge {
+    padding: var(--spacing-sm);
+  }
+  .techBadge i {
+    font-size: 1.5rem !important;
   }
 }

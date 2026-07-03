@@ -2,13 +2,13 @@ export const links = [
   {
     type: "personal projects",
     name: "Marketplace web application",
-    link: "https://github.com/cgomez374/marketplace_app",
+    link: "https://drive.google.com/file/d/1Q2csrfGWO9mWO0SyzeyTJuip154e_8u1/view",
     img: "marketplace_app.PNG",
   },
   {
     type: "personal projects",
     name: "movie reviews backend app",
-    link: "https://github.com/cgomez374/movie_reviews_app",
+    link: "https://drive.google.com/file/d/1zx2pIb7exHbeeWlnF9-Z0ik2Y-hL80gU/view",
     img: "movie_reviews.PNG",
   },
   {
@@ -20,7 +20,7 @@ export const links = [
   {
     type: "personal projects",
     name: "Blog Web App",
-    link: "https://github.com/cgomez374/my-blog-app",
+    link: "https://my-blog-web-app.netlify.app/",
     img: "my-blog-app.PNG",
   },
   {
