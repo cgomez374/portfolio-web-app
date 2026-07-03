@@ -161,7 +161,7 @@
 
   .projectCard {
     width: 85%;
-    max-width: 360px;
+    max-width: 360x;
     min-height: auto;
     text-align: center;
   }
@@ -187,7 +187,7 @@
 
 @media (max-width: 500px) {
   .projectCard {
-    width: 80%;
+    width: 85%;
     max-width: 340px;
     min-height: auto;
   }
